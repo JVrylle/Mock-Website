@@ -58,7 +58,7 @@ mockup** of the marketing website (no backend, no build step).
 
 ## Conventions
 - Class naming: `block__element--modifier` (BEM-lite), prefixed by block (`nav__`, `hero__`, `module__`...).
-- Sections: `<section>` with `id` + `section` class; container class `container` (max-width 1180px).
+- Sections: `<section>` with `id` + `section` class; container class `container` (max-width 1280px).
 - JS hooks: `data-` attributes for mobile nav (`data-nav-toggle`), early-access toggle
   (`data-ea`), and validation (`data-error-for`, `data-ea-success`).
 - Do not add comments to code unless genuinely clarifying non-obvious logic.
@@ -74,6 +74,8 @@ mockup** of the marketing website (no backend, no build step).
 ## Changelog
 | Date | Change |
 |---|---|
+| 2026-08-16 | Container inset fixed for real: cap raised to `1440px` **and** `padding-inline` drops 24 → 16px at ≤1280 — below the cap the container is `100% − padding`, so the 24px sides were the actual cause of the "95% width" look on ~960–1280px windows (the cap only mattered above it). Content now reads ~97–100% of the viewport at typical laptop widths. |
+| 2026-08-16 | `--container` widened 1180 → 1280px: on ~1240px laptop windows the content column was exactly ~95% of the viewport (header bar reads full-width), making the page look inset — content now fills typical laptop windows while still capping on large screens. |
 | 2026-08-16 | Loader + login responsive polish: loader bar gets `max-width: calc(100vw − 48px)` (was fixed 400px — overflowed below 400px viewports); login gains two short-screen tiers — `max-height: 700px` (panel/aside padding 40px/56px, brand-name capped `clamp(2.6rem, 5.5vw, 4.4rem)`, eyebrow/sub margins tightened) and `max-height: 620px` (panel becomes internally scrollable via `overflow-y: auto` + `place-items: start center`, page stays scroll-free); phone-landscape tier `(max-width: 900px) and (max-height: 520px)` — aside grows to content (`min-height: auto`), brand-name sized by `6vh`, tagline hidden. |
 | 2026-08-16 | Responsive pass across 4 tiers (desktop >1280 / laptop 901–1280 / tablet 601–900 / phone ≤600): hamburger dropdown (≤1200) now includes Log In + Get Started CTA row (`.nav__cta`, hidden on desktop) on `index.html`; duplicate nav-dropdown rules removed from the ≤860 block; audience cards go 1-col at ≤767 (was ≤600); old ≤540 block deleted (dead selectors); new ≤600 phone tier — container padding 16px, section padding 64px, hero eyebrow tightened + CTAs stack full-width, hero note 12.5px, module ghost numbers 2.6rem at `top/right: 20px`, early-access toggle stacks full-width, footer 1-col, about-value/price-card padding tightened, login aside/panel padding + brand-name floor `clamp(2.6rem, 12vw, 5.4rem)`. |
 | 2026-08-16 | Login page polish: `#loader` removed from `login.html` (no loading screen on login; `main.js` guards on element existence); back button text changed to "Go Back" (arrow dropped); success phrase now "✓ Successfully Logged In" with `margin-top: 18px` clearance below the submit button; desktop `.login` locked to `height: 100svh; overflow: hidden` (zero vertical scroll; ≤900px stack resets to `height: auto; overflow: visible`), plus `@media (max-height: 780px)` padding tightening; login CSS/JS comment headers de-dashed. |

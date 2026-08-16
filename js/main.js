@@ -66,7 +66,7 @@
           revealObserver.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.5, rootMargin: '0px 0px -10% 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px -10% 0px' });
     revealTargets.forEach(function (el) {
       if (!el.classList.contains('module-section') && !el.classList.contains('audience')) el.classList.add('reveal');
     });

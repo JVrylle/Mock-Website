@@ -21,7 +21,7 @@
   --font-body: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
 
   /* Layout */
-  --container: 1180px;
+  --container: 1440px;
   --radius: 14px;
   --radius-sm: 8px;
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
@@ -1189,7 +1189,7 @@ body, a, button, input, select, textarea, label, .nav__link, .btn {
   z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 72px;
+  gap: 48px;
   align-items: center;
 }
 
@@ -1264,7 +1264,7 @@ body, a, button, input, select, textarea, label, .nav__link, .btn {
   z-index: 1;
   width: 100%;
   max-width: 420px;
-  justify-self: center;
+  justify-self: start;
   height: 360px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius);
@@ -1282,6 +1282,7 @@ body, a, button, input, select, textarea, label, .nav__link, .btn {
 .module-section--light .module-section__preview {
   background: var(--black-soft);
   border-color: rgba(255, 255, 255, 0.1);
+  justify-self: end;
 }
 
 /* Module staged reveal: title + preview drift in from their sides, then desc + checks rise */
@@ -1334,8 +1335,8 @@ body, a, button, input, select, textarea, label, .nav__link, .btn {
   height: 100vh;
   height: 100svh;
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 5vw, #000 calc(100% - 5vw), transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0, #000 5vw, #000 calc(100% - 5vw), transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 2vw, #000 calc(100% - 2vw), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 2vw, #000 calc(100% - 2vw), transparent 100%);
 }
 
 .modules-scroll__track {
@@ -1621,6 +1622,10 @@ body, a, button, input, select, textarea, label, .nav__link, .btn {
 }
 
 /* Responsive for new components */
+@media (max-width: 1280px) {
+  .container { padding-inline: 16px; }
+}
+
 @media (max-width: 1200px) {
   .nav__links {
     position: fixed;
@@ -1700,8 +1705,6 @@ body, a, button, input, select, textarea, label, .nav__link, .btn {
 
   .module-section__num { font-size: 2.6rem; top: 20px; right: 20px; }
 
-  .earlyaccess__toggle { flex-direction: column; }
-  .earlyaccess__opt { width: 100%; }
   .earlyaccess__form { padding: 26px 20px; }
 
   .module-section__preview { height: 240px; max-width: none; justify-self: stretch; }
@@ -1710,7 +1713,8 @@ body, a, button, input, select, textarea, label, .nav__link, .btn {
   .price-card { padding: 28px 22px; }
 
   .audience { padding-bottom: 40px; }
-  .earlyaccess { padding-top: 40px; }
+  .pricing { padding-bottom: 48px; }
+  .earlyaccess { padding-top: 0; }
 
   .footer__inner { grid-template-columns: 1fr; gap: 32px; }
 
