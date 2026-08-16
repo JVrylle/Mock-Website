@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log In — EIRENEOPS</title>
+  <meta name="description" content="Sign in to your EireneOps command center. Selective onboarding." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <main class="login">
+    <!-- LEFT: BRAND FILLER -->
+    <section class="login__aside" aria-label="About EireneOps">
+      <div class="login__stars" aria-hidden="true">
+        <span class="stars-layer stars-layer--far"></span>
+        <span class="stars-layer stars-layer--mid"></span>
+        <span class="stars-layer stars-layer--near"></span>
+      </div>
+
+      <a href="index.html#home" class="login__back btn btn--ghost">Go Back</a>
+
+      <div class="login__brand">
+        <p class="login__eyebrow"><span class="login__eyebrow-line" aria-hidden="true"></span> Est. 2026 — Nypzim Holdings</p>
+        <p class="login__brand-name">EIRENE<span>OPS</span></p>
+        <span class="hero__rule" aria-hidden="true"></span>
+        <p class="login__brand-sub">The Executive Operations Platform</p>
+        <p class="login__brand-tagline">Inbox. Calendar. Media. Research. Notes.<br />One command center for the people who run the room.</p>
+      </div>
+
+      <p class="login__legal">© 2026 Nypzim Holdings LLC</p>
+    </section>
+
+    <!-- RIGHT: LOGIN PANEL -->
+    <section class="login__panel" aria-label="Sign in">
+      <div class="login__form-wrap">
+        <p class="section-head__tag">Log In</p>
+        <h1 class="login__title">Welcome back.</h1>
+        <p class="login__sub">Sign in to your command center.</p>
+
+        <form class="login__form" id="loginForm" novalidate>
+          <div class="earlyaccess__field">
+            <label class="earlyaccess__label" for="login-email">Work email</label>
+            <input class="earlyaccess__input" type="email" id="login-email" name="email" placeholder="jane@firm.com" autocomplete="email" required />
+            <p class="earlyaccess__error" data-error-for="email"></p>
+          </div>
+          <div class="earlyaccess__field">
+            <label class="earlyaccess__label" for="login-password">Password</label>
+            <div class="login__password-wrap">
+              <input class="earlyaccess__input login__password-input" type="password" id="login-password" name="password" placeholder="••••••••" autocomplete="current-password" required />
+              <button type="button" class="login__toggle" data-login-toggle aria-label="Show password">Show</button>
+            </div>
+            <p class="earlyaccess__error" data-error-for="password"></p>
+          </div>
+
+          <div class="login__row">
+            <label class="login__check">
+              <input type="checkbox" name="remember" />
+              <span class="login__check-box" aria-hidden="true"></span>
+              Remember me
+            </label>
+            <a href="index.html#earlyaccess" class="login__forgot">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn--yellow btn--block btn--lg">Log In</button>
+          <p class="earlyaccess__success" data-login-success hidden>✓ Successfully Logged In</p>
+        </form>
+
+        <p class="login__note">New here? <a href="index.html#earlyaccess">Request early access</a> — onboarding is selective.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

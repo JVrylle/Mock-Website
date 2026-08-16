@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EIRENEOPS — The Executive Operations Platform</title>
+  <meta name="description" content="Built for operators who run the room — not react to it. Six modules. One command center." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="loader" id="loader" role="status" aria-label="Loading">
+    <div class="loader__inner">
+      <p class="loader__wordmark">EIRENE<span class="loader__wordmark-accent">OPS</span></p>
+      <span class="loader__bar" aria-hidden="true"><span class="loader__bar-fill"></span></span>
+      <div class="loader__meta">
+        <p class="loader__status">Establishing secure connection<span class="loader__dots" aria-hidden="true"><i>.</i><i>.</i><i>.</i></span></p>
+        <span class="loader__counter" data-loader-counter>01%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- 1. NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo" aria-label="EireneOps home">
+        <span class="nav__logo-text">EIRENE<span class="nav__logo-accent">OPS</span></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#problem" class="nav__link">The Problem</a>
+        <a href="#platform" class="nav__link">The Platform</a>
+        <a href="#audience" class="nav__link">For You</a>
+        <a href="#pricing" class="nav__link">Investment</a>
+        <a href="#earlyaccess" class="nav__link">Early Access</a>
+        <div class="nav__cta">
+          <a href="login.html" class="btn btn--ghost">Log In</a>
+          <a href="#earlyaccess" class="btn btn--yellow">Get Started</a>
+        </div>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn--ghost">Log In</a>
+        <a href="#earlyaccess" class="btn btn--yellow">Get Started</a>
+      </div>
+
+      <button class="nav__toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO -->
+    <section class="hero section" id="home">
+      <div class="hero__stars" aria-hidden="true">
+        <span class="stars-layer stars-layer--far"></span>
+        <span class="stars-layer stars-layer--mid"></span>
+        <span class="stars-layer stars-layer--near"></span>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow"><span class="hero__eyebrow-line hero__eyebrow-line--left" aria-hidden="true"></span> Est. 2026<span class="hero__eyebrow-line" aria-hidden="true"></span>Nypzim Holdings <span class="hero__eyebrow-line" aria-hidden="true"></span></p>
+          <h1 class="hero__title">EIRENE<span class="hero__title-accent">OPS</span></h1>
+          <span class="hero__rule" aria-hidden="true"></span>
+          <p class="hero__subhead">The Executive Operations Platform</p>
+          <p class="hero__subtitle">Built for operators who run the room — not react to it.</p>
+          <div class="hero__cta">
+            <a href="#earlyaccess" class="btn btn--yellow btn--lg">Request Early Access</a>
+            <a href="#platform" class="btn btn--ghost btn--lg">Explore the Platform</a>
+          </div>
+          <p class="hero__note">Selective onboarding. Six modules. One command center.</p>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"><span class="hero__scroll-dot"></span></span>
+      </div>
+    </section>
+
+    <!-- 3. PROBLEM STATEMENT -->
+    <section class="problem section" id="problem">
+      <div class="container problem__inner">
+        <h2 class="problem__title">Every hour you spend managing the machine — is an hour not leading it.</h2>
+        <ul class="problem__list">
+          <li>Inbox overload erodes executive bandwidth.</li>
+          <li>Missed follow-ups cost deals.</li>
+          <li>Scattered assets slow execution.</li>
+          <li>EireneOps was built to solve this.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. THE PLATFORM (6 MODULES) — scroll-scrubbed carousel -->
+    <section class="platform modules-scroll" id="platform">
+      <div class="modules-scroll__viewport">
+        <div class="modules-scroll__track">
+
+          <div class="modules-slide modules-slide--intro">
+            <div class="container">
+              <div class="section-head section-head--light">
+                <p class="section-head__tag">The Platform</p>
+                <h2 class="section-head__title">Six modules. One command center.</h2>
+                <p class="section-head__sub">Each module is engineered as a discipline of its own — and composed into a single, coherent operating system for the executive day.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5.1 MODULE 01 -->
+          <section class="modules-slide module-section" id="module-01">
+            <span class="module-section__num" aria-hidden="true">01</span>
+            <div class="container module-section__inner">
+              <div class="module-section__content">
+                <h3 class="module-section__title">Global Overview Dashboard</h3>
+                <p class="module-section__sub">Every signal. One pane.</p>
+                <p class="module-section__desc">A real-time command surface that consolidates the operational health of your entire estate — telemetry, throughput, exceptions — visible the moment you sign in.</p>
+                <ul class="module-section__bullets">
+                  <li>Live KPI rings &amp; sparkline telemetry</li>
+                  <li>Geo-distributed activity map</li>
+                  <li>Exception alerts surfaced first</li>
+                </ul>
+              </div>
+              <div class="module-section__preview">
+              </div>
+            </div>
+          </section>
+
+          <!-- 5.2 MODULE 02 -->
+          <section class="modules-slide module-section module-section--light" id="module-02">
+            <span class="module-section__num" aria-hidden="true">02</span>
+            <div class="container module-section__inner">
+              <div class="module-section__content">
+                <h3 class="module-section__title">Operations Inbox</h3>
+                <p class="module-section__sub">Zero inbox. Without compromise.</p>
+                <p class="module-section__desc">Email triaged, categorized, and routed by intent. Drafts pre-written in your voice. The noise is gone before you arrive.</p>
+                <ul class="module-section__bullets">
+                  <li>VIP, Needs Reply, FYI auto-routing</li>
+                  <li>Voice-matched AI drafts</li>
+                  <li>One-tap approve &amp; send</li>
+                </ul>
+              </div>
+              <div class="module-section__preview">
+              </div>
+            </div>
+          </section>
+
+          <!-- 5.3 MODULE 03 -->
+          <section class="modules-slide module-section" id="module-03">
+            <span class="module-section__num" aria-hidden="true">03</span>
+            <div class="container module-section__inner">
+              <div class="module-section__content">
+                <h3 class="module-section__title">Media Vault</h3>
+                <p class="module-section__sub">Every asset, archived with intent.</p>
+                <p class="module-section__desc">A meticulously indexed archive of every file, frame, and reference your operation touches — pulled in from every source, retrievable in a breath.</p>
+                <ul class="module-section__bullets">
+                  <li>Cross-source unified library</li>
+                  <li>Semantic search across all media</li>
+                  <li>Version &amp; rights tracking</li>
+                </ul>
+              </div>
+              <div class="module-section__preview">
+              </div>
+            </div>
+          </section>
+
+          <!-- 5.4 MODULE 04 -->
+          <section class="modules-slide module-section module-section--light" id="module-04">
+            <span class="module-section__num" aria-hidden="true">04</span>
+            <div class="container module-section__inner">
+              <div class="module-section__content">
+                <h3 class="module-section__title">Calendar &amp; Foundation Matrix</h3>
+                <p class="module-section__sub">Guard the hours that matter.</p>
+                <p class="module-section__desc">Foundational blocks — the deep work, the family, the recovery — are protected by design. Every meeting request is measured against what you've already chosen to protect.</p>
+                <ul class="module-section__bullets">
+                  <li>Foundation blocks shielded by default</li>
+                  <li>Conflict detection before acceptance</li>
+                  <li>Smart hold slots for pending replies</li>
+                </ul>
+              </div>
+              <div class="module-section__preview">
+              </div>
+            </div>
+          </section>
+
+          <!-- 5.5 MODULE 05 -->
+          <section class="modules-slide module-section" id="module-05">
+            <span class="module-section__num" aria-hidden="true">05</span>
+            <div class="container module-section__inner">
+              <div class="module-section__content">
+                <h3 class="module-section__title">Intelligence &amp; Research Hub</h3>
+                <p class="module-section__sub">Briefings on demand.</p>
+                <p class="module-section__desc">Deep-dive research synthesized into decision-ready briefings — citations intact, sources verified, delivered without breaking your workflow.</p>
+                <ul class="module-section__bullets">
+                  <li>Verified sources &amp; live citations</li>
+                  <li>Comparison tables &amp; trade-off matrices</li>
+                  <li>Export to PDF or paste into draft</li>
+                </ul>
+              </div>
+              <div class="module-section__preview">
+              </div>
+            </div>
+          </section>
+
+          <!-- 5.6 MODULE 06 -->
+          <section class="modules-slide module-section module-section--light" id="module-06">
+            <span class="module-section__num" aria-hidden="true">06</span>
+            <div class="container module-section__inner">
+              <div class="module-section__content">
+                <h3 class="module-section__title">AI Notetaker</h3>
+                <p class="module-section__sub">Meetings become action.</p>
+                <p class="module-section__desc">An identified AI assistant joins your calls, transcribes faithfully, then converts the conversation into structured notes, decisions, and assigned action items.</p>
+                <ul class="module-section__bullets">
+                  <li>Transparent, identified AI participant</li>
+                  <li>Speaker-attributed transcripts</li>
+                  <li>Auto-extracted action items &amp; owners</li>
+                </ul>
+              </div>
+              <div class="module-section__preview">
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="modules-scroll__progress" aria-hidden="true">
+          <span class="modules-scroll__counter" data-modules-counter>The Platform</span>
+          <span class="modules-scroll__dots" data-modules-dots></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ABOUT (added section) -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__tag">About</p>
+          <h2 class="section-head__title">Quietly engineered.<br />Unmistakably precise.</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              EireneOps is the executive operations platform from Nypzim Holdings — built
+              by operators who got tired of running their day by hand. We designed a system
+              that runs the machine so you can run the room.
+            </p>
+            <p>
+              Every module is engineered as a discipline of its own and composed into a single,
+              coherent command center: inbox, calendar, media, research, notes — one source of truth.
+            </p>
+            <a href="#earlyaccess" class="btn btn--yellow">Request Early Access</a>
+          </div>
+          <ul class="about__values">
+            <li class="about__value">
+              <span class="about__value-num">01</span>
+              <div>
+                <h3 class="about__value-title">Zero inbox</h3>
+                <p>The noise is triaged, routed and drafted before you arrive.</p>
+              </div>
+            </li>
+            <li class="about__value">
+              <span class="about__value-num">02</span>
+              <div>
+                <h3 class="about__value-title">Guarded hours</h3>
+                <p>The hours that matter are protected by design, not by willpower.</p>
+              </div>
+            </li>
+            <li class="about__value">
+              <span class="about__value-num">03</span>
+              <div>
+                <h3 class="about__value-title">Silent precision</h3>
+                <p>Quiet systems, meticulous execution, no operational noise.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. AUDIENCE SEGMENTS -->
+    <section class="audience section" id="audience">
+      <div class="container">
+        <div class="audience__grid">
+          <article class="audience-card">
+            <p class="audience-card__label">For Individuals</p>
+            <p class="audience-card__sub">Solo EAs, fractional COOs, operations managers, executive assistants.</p>
+            <ul class="audience-card__bullets">
+              <li>Running 1–3 principals</li>
+              <li>Managing multiple platforms from one place</li>
+              <li>Need structure, not more tools</li>
+            </ul>
+          </article>
+          <article class="audience-card audience-card--featured">
+            <p class="audience-card__label">For Business</p>
+            <p class="audience-card__sub">EA agencies, family offices, multi-principal firms.</p>
+            <ul class="audience-card__bullets">
+              <li>Teams of operators, one shared command center</li>
+              <li>Custom dashboards and white-glove onboarding</li>
+              <li>Scalable from 3 to unlimited principals</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PRICING -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__tag">Investment</p>
+          <h2 class="section-head__title">Plans that scale with your operation.</h2>
+        </div>
+
+        <div class="pricing__grid">
+          <article class="price-card">
+            <h3 class="price-card__name">Solo Operator</h3>
+            <p class="price-card__desc">For freelance EAs &amp; solo entrepreneurs</p>
+            <p class="price-card__amount"><span class="price-card__currency">$</span>25<span class="price-card__per">/month</span></p>
+            <ul class="price-card__features">
+              <li>Core Sidekick UI</li>
+              <li>Inbox Triage (500 syncs/mo)</li>
+              <li>Calendar Sync</li>
+              <li>Local Notetaker</li>
+            </ul>
+            <a href="#earlyaccess" class="btn btn--dark btn--block">Get Started</a>
+          </article>
+
+          <article class="price-card price-card--featured">
+            <span class="price-card__badge">Most Popular</span>
+            <h3 class="price-card__name">Executive Suite</h3>
+            <p class="price-card__desc">For dedicated EAs &amp; fractional operators</p>
+            <p class="price-card__amount"><span class="price-card__currency">$</span>89<span class="price-card__per">/month</span></p>
+            <ul class="price-card__features">
+              <li>Unlimited Inbox + Calendar syncs</li>
+              <li>Research Assistant</li>
+              <li>Video Downloader</li>
+              <li>Media Vault</li>
+              <li>Full backend sync</li>
+            </ul>
+            <a href="#earlyaccess" class="btn btn--yellow btn--block">Get Started</a>
+          </article>
+
+          <article class="price-card">
+            <h3 class="price-card__name">Enterprise Hub</h3>
+            <p class="price-card__desc">For EA agencies &amp; multi-principal firms</p>
+            <p class="price-card__amount">Custom</p>
+            <ul class="price-card__features">
+              <li>Multi-seat licensing</li>
+              <li>Shared Media Vaults</li>
+              <li>SOP generation</li>
+              <li>White-glove onboarding</li>
+              <li>Custom API integrations</li>
+            </ul>
+            <a href="#earlyaccess" class="btn btn--dark btn--block">Contact Us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. EARLY ACCESS -->
+    <section class="earlyaccess section" id="earlyaccess">
+      <div class="container earlyaccess__inner">
+        <div class="earlyaccess__info">
+          <p class="section-head__tag">Early Access</p>
+          <h2 class="earlyaccess__title">Request<br />early access.</h2>
+          <p class="earlyaccess__text">
+            Individual or business — we're onboarding selectively. Tell us about
+            your operation and we'll be in touch.
+          </p>
+        </div>
+
+        <form class="earlyaccess__form" id="earlyaccessForm" novalidate>
+          <div class="earlyaccess__toggle" role="tablist" aria-label="Audience">
+            <button type="button" class="earlyaccess__opt is-active" data-ea="individual" aria-selected="true">individual</button>
+            <button type="button" class="earlyaccess__opt" data-ea="business" aria-selected="false">business</button>
+          </div>
+          <input type="hidden" id="ea-audience" name="audience" value="individual" />
+
+          <div class="earlyaccess__field">
+            <label class="earlyaccess__label" for="ea-name">Full name</label>
+            <input class="earlyaccess__input" type="text" id="ea-name" name="name" placeholder="Jane Operator" required />
+            <p class="earlyaccess__error" data-error-for="name"></p>
+          </div>
+          <div class="earlyaccess__field">
+            <label class="earlyaccess__label" for="ea-email">Work email</label>
+            <input class="earlyaccess__input" type="email" id="ea-email" name="email" placeholder="jane@firm.com" required />
+            <p class="earlyaccess__error" data-error-for="email"></p>
+          </div>
+          <div class="earlyaccess__field">
+            <label class="earlyaccess__label" for="ea-message">Tell us about your operation</label>
+            <textarea class="earlyaccess__input" id="ea-message" name="message" rows="4" placeholder="Principals, platforms, what's wearing you down…" required></textarea>
+            <p class="earlyaccess__error" data-error-for="message"></p>
+          </div>
+          <button type="submit" class="btn btn--yellow btn--block btn--lg">Submit Request</button>
+          <p class="earlyaccess__success" data-ea-success hidden>✓ Received — we're onboarding selectively and will be in touch.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo" aria-label="EireneOps home">
+          <span class="nav__logo-text">EIRENE<span class="nav__logo-accent">OPS</span></span>
+        </a>
+        <p class="footer__tagline">The Executive Operations Platform — built for operators who run the room.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Product">
+        <h4 class="footer__col-title">Product</h4>
+        <a href="#module-01" class="footer__link">Overview Dashboard</a>
+        <a href="#module-02" class="footer__link">Operations Inbox</a>
+        <a href="#module-03" class="footer__link">Media Vault</a>
+        <a href="#module-04" class="footer__link">Calendar &amp; Foundation</a>
+        <a href="#module-05" class="footer__link">Research Hub</a>
+        <a href="#module-06" class="footer__link">AI Notetaker</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Company">
+        <h4 class="footer__col-title">Company</h4>
+        <a href="#about" class="footer__link">About</a>
+        <a href="#earlyaccess" class="footer__link">Early Access</a>
+        <a href="#about" class="footer__link">Nypzim Holdings</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Legal">
+        <h4 class="footer__col-title">Legal</h4>
+        <a href="#earlyaccess" class="footer__link">Privacy</a>
+        <a href="#earlyaccess" class="footer__link">Terms</a>
+      </nav>
+    </div>
+
+    <div class="container footer__bottom">
+      <p class="footer__copyright">© 2026 Nypzim Holdings LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
